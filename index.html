@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./icon.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Decodificador de texto</title>
+  </head>
+  <body>
+    <header>
+      <img src="./icon.jpg" alt="logo" class="logo-header" />
+      <div class="box-header-title">
+        <h1>Decodificador</h1>
+      </div>
+    </header>
+    <main>
+      <section class="encrypt-area">
+        <textarea
+          name="text-box"
+          id="text-box"
+          cols="40"
+          rows="4"
+          placeholder="Digite seu texto"
+          class="text-input"
+        ></textarea>
+        <div class="alert-message">
+          <img src="./icon1.jpg" alt="icon!" class="icon-alert" />
+          <small>Apenas letras minúsculas e sem acento.</small>
+        </div>
+        <div class="buttons">
+          <button class="encrypt-button">Criptografar</button>
+          <button class="decrypt-button">Descriptografar</button>
+        </div>
+      </section>
+      <section class="empty-response-area">
+        <img src="./img-empty.png" alt="empty message" class="img-empty" />
+        <h3>Nenhuma mensagem encontrada</h3>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </section>
+      <section class="encrypt-response-area" id="display-response-area">
+        <textarea
+          name="return-text-box"
+          id="return-text-box"
+          cols="30"
+          rows="10"
+          class="return-text"
+        ></textarea>
+        <button class="copy-button">Copiar</button>
+      </section>
+    </main>
+    <footer>Elaborado por: Monica Canaza</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
